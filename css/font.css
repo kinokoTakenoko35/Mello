@@ -1,35 +1,35 @@
 @charset "UTF-8";
 
 .ten-mincho {
-	font-family: "ten-mincho", "Kokoro", serif;
+    font-family: "ten-mincho", "Kokoro", serif;
     font-feature-settings: "ss02";
 }
 
 .Nikukyu {
-	font-family: "Nikukyu";
-	font-weight: bolder;
+    font-family: "Nikukyu";
+    font-weight: bolder;
 }
 
 .Kokoro {
-	font-family: "Kokoro";
+    font-family: "Kokoro";
 }
 
 .Hannari {
-	font-family: "Kokoro";
+    font-family: "Kokoro";
 }
 
 .vdl-logog {
-	font-family: "vdl-logog", sans-serif;
-	font-style: normal;
-	font-weight: 400;
+    font-family: "vdl-logog", sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .lores-15-bold-alt-oakland {
-	font-family: "lores-15-bold-alt-oakland", sans-serif;
-	font-style: normal;
-	font-weight: 400;
+    font-family: "lores-15-bold-alt-oakland", sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .Kokoro {
-	font-family: "Kokoro";
+    font-family: "Kokoro";
 }
