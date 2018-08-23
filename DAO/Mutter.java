@@ -40,7 +40,6 @@ public class Mutter implements Serializable {
 	public String getText() { return text; }
 	public int getUserId() { return userId; }
 	public String getImg() {return img;}
-
 	public String getFont() {return font;}
 	public void setFont(String font) {this.font = font;}
 	public String getWords() {return words;}

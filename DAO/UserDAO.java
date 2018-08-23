@@ -9,11 +9,6 @@ import model.DBDriver;
 import model.User;
 
 public class UserDAO implements DBDriver {
-	// 各種設定
-	//private final String DRIVER_NAME = "com.mysql.jdbc.Driver";
-	//private final String JDBC_URL = "jdbc:mysql://localhost/mello?useUnicode=true&characterEncoding=utf8";
-	//private final String DB_USER = "root";
-	//private final String DB_PASS = "";
 
 	public User create(User createuser) {
 		Connection conn = null;
@@ -38,8 +33,7 @@ public class UserDAO implements DBDriver {
 				 //一致したユーザーがいた場合ID取得してくる
 				while(rs3.next()) {
 					createuser.setId(rs3.getInt("ID"));
-			}
-
+				}
 			}
 		} catch(SQLException e) {
 			e.printStackTrace();
@@ -57,7 +51,6 @@ public class UserDAO implements DBDriver {
 		}
 		return createuser;
 	}
-
 
 	public User findUser(int id, String pass){
 		Connection conn = null;
@@ -129,7 +122,7 @@ public class UserDAO implements DBDriver {
 					String name = rs3.getString("NAME");
 					String pass = rs3.getString("PASS");
 					profUser = new User(rs3.getInt("ID"), name, pass, rs3.getString("IMG"));
-			}
+			    }
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -150,6 +143,4 @@ public class UserDAO implements DBDriver {
 		}
 		return profUser;
 	}
-
-
 }

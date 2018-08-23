@@ -7,7 +7,4 @@ public class PostMutterLogic {
 		MutterDAO dao = new MutterDAO();
 		dao.create(mutter);
 	}
-
-
-
 }

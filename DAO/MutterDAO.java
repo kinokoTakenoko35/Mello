@@ -14,30 +14,25 @@ import model.Mutter;
 
 public class MutterDAO implements DBDriver {
 
-	//private final String DRIVER_NAME = "com.mysql.jdbc.Driver";
-	//private final String JDBC_URL = "jdbc:mysql://localhost/mello?useUnicode=true&characterEncoding=utf8";
-	//private final String DB_USER = "root";
-	//private final String DB_PASS = "";
-
-	public List<Mutter> findAll(){	// findAll()ƒƒ\ƒbƒhÀs‚µAMutterƒe[ƒuƒ‹‚©‚çƒŒƒR[ƒh‚ğæ“¾‚·‚é
+	public List<Mutter> findAll(){	// findAll()ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½ï¿½ï¿½sï¿½ï¿½ï¿½AMutterï¿½eï¿½[ï¿½uï¿½ï¿½ï¿½ï¿½ï¿½çƒŒï¿½Rï¿½[ï¿½hï¿½ï¿½ï¿½æ“¾ï¿½ï¿½ï¿½ï¿½
 		Connection conn = null;
 		List<Mutter> mutterList = new ArrayList<Mutter>();
 		try {
-			Class.forName(DRIVER_NAME);	// JDBCƒhƒ‰ƒCƒo‚ğ“Ç‚İ‚İ
+			Class.forName(DRIVER_NAME);	// JDBCï¿½hï¿½ï¿½ï¿½Cï¿½oï¿½ï¿½Ç‚İï¿½ï¿½ï¿½
 			conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS);
-			// SELECT•¶‚Ì€”õ(MySQL‚Å“à•”Œ‹‡‚µ‚½ƒe[ƒuƒ‹‚Ìî•ñ‚ğæ“¾‚·‚é
+			// SELECTï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½(MySQLï¿½Å“ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½eï¿½[ï¿½uï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½ï¿½æ“¾ï¿½ï¿½ï¿½ï¿½
 			String sql = "SELECT mutter.ID, NAME, TEXT, IMG FROM user INNER JOIN mutter ON mutter.USERID = user.id ORDER BY ID DESC;";
 			PreparedStatement pStmt = conn.prepareStatement(sql);
-			// SELECT‚ğÀs
+			// SELECTï¿½ï¿½ï¿½ï¿½ï¿½s
 			ResultSet rs = pStmt.executeQuery();
-			// SELECT•¶‚ÌŒ‹‰Ê‚ğArrayList‚ÉŠi”[
+			// SELECTï¿½ï¿½ï¿½ÌŒï¿½ï¿½Ê‚ï¿½ArrayListï¿½ÉŠiï¿½[
 			while(rs.next()) {
 				Mutter mutter = new Mutter();
-				int id = rs.getInt("mutter.ID");		//‚Ç‚Ìƒe[ƒuƒ‹‚ÌID‚ğæ“¾‚·‚é‚©‘I‘ğ‚ğ’Ç‰Á
+				int id = rs.getInt("mutter.ID");		//ï¿½Ç‚Ìƒeï¿½[ï¿½uï¿½ï¿½ï¿½ï¿½IDï¿½ï¿½ï¿½æ“¾ï¿½ï¿½ï¿½é‚©ï¿½Iï¿½ï¿½ï¿½ï¿½Ç‰ï¿½
 				String userUserId = rs.getString("NAME");
 				String text = rs.getString("TEXT");
 				String img = rs.getString("IMG");
-				// font ‚Æwords‚Ì—”‚Ì’l‚ğ‚Æ‚Á‚Ä‚­‚éB
+				// font ï¿½ï¿½wordsï¿½Ì—ï¿½ï¿½ï¿½ï¿½Ì’lï¿½ï¿½ï¿½Æ‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½B
 				CommonLogic commonLogic = new CommonLogic();
 				mutter.setFont(commonLogic.fontGenerater());
 				mutter.setWords(commonLogic.wordsGenerater());
@@ -46,7 +41,6 @@ public class MutterDAO implements DBDriver {
 				if(img == null) {
 					mutter.setImg("20170722213834.jpg");
 				}
-
 				mutterList.add(mutter);
 			}
 		} catch (SQLException e) {
@@ -56,7 +50,7 @@ public class MutterDAO implements DBDriver {
 			e.printStackTrace();
 			return null;
 		} finally {
-			// ƒf[ƒ^ƒx[ƒXØ’f
+			// ï¿½fï¿½[ï¿½^ï¿½xï¿½[ï¿½Xï¿½Ø’f
 			if(conn != null) {
 				try {
 					conn.close();
@@ -72,16 +66,16 @@ public class MutterDAO implements DBDriver {
 	public boolean create(Mutter mutter) {
 		Connection conn = null;
 		try {
-			// MySQL‚ÖÚ‘±
+			// MySQLï¿½ÖÚ‘ï¿½
 			conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS);
-			// INSERT•¶‚Ì€”õ(ID‚Í©“®˜A”Ô‚È‚Ì‚Åw’è‚µ‚È‚­‚Ä‚¢‚¢)
+			// INSERTï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½(IDï¿½Íï¿½ï¿½ï¿½ï¿½Aï¿½Ô‚È‚Ì‚Åwï¿½è‚µï¿½È‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½)
 			String sql = "INSERT INTO MUTTER(USERID, TEXT) VALUES(?, ?);";
 			PreparedStatement pStmt = conn.prepareStatement(sql);
-			// INSERT•¶’†‚ÌuHv‚Ég—p‚·‚é’l‚ğİ’è‚µSQL‚ğŠ®¬
+			// INSERTï¿½ï¿½ï¿½ï¿½ï¿½Ìuï¿½Hï¿½vï¿½Égï¿½pï¿½ï¿½ï¿½ï¿½lï¿½ï¿½İ’è‚µSQLï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			pStmt.setInt(1,  mutter.getUserId());
 			pStmt.setString(2, mutter.getText());
 
-			// INSERT•¶‚ğÀs
+			// INSERTï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½s
 			int result = pStmt.executeUpdate();
 
 			if(result != 1) {
@@ -91,7 +85,7 @@ public class MutterDAO implements DBDriver {
 			e.printStackTrace();
 			return false;
 		} finally {
-			// ƒf[ƒ^ƒx[ƒXØ’f
+			// ï¿½fï¿½[ï¿½^ï¿½xï¿½[ï¿½Xï¿½Ø’f
 			if(conn != null) {
 				try {
 					conn.close();
@@ -104,23 +98,22 @@ public class MutterDAO implements DBDriver {
 	}
 
 
-	// ‚¨‹C‚É“ü‚èŠÖ˜A‚Ìƒƒ\ƒbƒh
+	// ï¿½ï¿½ï¿½Cï¿½É“ï¿½ï¿½ï¿½Ö˜Aï¿½Ìƒï¿½ï¿½\ï¿½bï¿½h
 
-	// ‚¨‹C‚É“ü‚èˆê——‚Ì•\¦ƒƒ\ƒbƒh
-	public List<Mutter>getAll(int userId){	// FindAll‚ÅLOVESƒe[ƒuƒ‹‚ÉŒ‹‡‚µ‚½î•ñ‚ğæ“¾‚·‚é
+	// ï¿½ï¿½ï¿½Cï¿½É“ï¿½ï¿½ï¿½ê——ï¿½Ì•\ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½h
+	public List<Mutter>getAll(int userId){	// FindAllï¿½ï¿½LOVESï¿½eï¿½[ï¿½uï¿½ï¿½ï¿½ÉŒï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ“¾ï¿½ï¿½ï¿½ï¿½
 		Connection conn = null;
 		List<Mutter> MutterList = new ArrayList<Mutter>();
 		try {
 			Class.forName(DRIVER_NAME);
 			conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS);
-			// SELECT•¶‚Ì€”õ(MySQL‚Å“à•”Œ‹‡‚µ‚½ƒe[ƒuƒ‹‚Ìî•ñ‚ğæ“¾‚·‚é@–WHERE‚ÅLOVESƒe[ƒuƒ‹‚É“ü‚Á‚Ä‚¢‚éUserID‚ğ‘I‘ğ‚·‚é‚æ‚¤‚É‚·‚éII
-			//String sql = "SELECT USER.ID, NAME,TEXT, IMG FROM LOVES INNER JOIN USER ON LOVES.user = USER.id INNER JOIN MUTTER ON LOVES.mutter = MUTTER.id WHERE LOVES.user = ? ORDER BY ID DESC;";
+			// SELECTï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½(MySQLï¿½Å“ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½eï¿½[ï¿½uï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½ï¿½æ“¾ï¿½ï¿½ï¿½ï¿½@ï¿½ï¿½WHEREï¿½ï¿½LOVESï¿½eï¿½[ï¿½uï¿½ï¿½ï¿½É“ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½UserIDï¿½ï¿½Iï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ‚¤ï¿½É‚ï¿½ï¿½ï¿½Iï¿½I
 			String sql = "SELECT MUTTER.id, NAME, TEXT, IMG FROM MUTTER INNER JOIN LOVES ON LOVES.MUTTER = MUTTER.id INNER JOIN USER ON MUTTER.USERID = USER.ID WHERE LOVES.USER = ?  ORDER BY ID DESC;";
 			PreparedStatement pStmt = conn.prepareStatement(sql);
 			pStmt.setInt(1,  userId);
-			// SELECT Às
+			// SELECT ï¿½ï¿½ï¿½s
 			ResultSet rs = pStmt.executeQuery();
-			// SELECT•¶‚ÌŒ‹‰Ê‚ğArrayList‚ÉŠi”[
+			// SELECTï¿½ï¿½ï¿½ÌŒï¿½ï¿½Ê‚ï¿½ArrayListï¿½ÉŠiï¿½[
 			while(rs.next()) {
 				Mutter mutter = new Mutter();
 				int id = rs.getInt("MUTTER.id");
@@ -130,7 +123,6 @@ public class MutterDAO implements DBDriver {
 
 				mutter = new Mutter(id, userName, text, img, "", "");
 				MutterList.add(mutter);
-
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -151,7 +143,7 @@ public class MutterDAO implements DBDriver {
 		return MutterList;
 	}
 
-	// ‚¨‹C‚É“ü‚èŒŸõ‚Ìƒƒ\ƒbƒh
+	// ï¿½ï¿½ï¿½Cï¿½É“ï¿½ï¿½èŒŸï¿½ï¿½ï¿½Ìƒï¿½ï¿½\ï¿½bï¿½h
 	public List<Mutter>searchAll(String searchText, int userId){
 		Connection conn = null;
 		List<Mutter> mutterList = new ArrayList<Mutter>();
@@ -159,15 +151,15 @@ public class MutterDAO implements DBDriver {
 			Class.forName(DRIVER_NAME);
 			conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS);
 
-			// SELECT•¶‚Ì€”õ(MySQL‚Å“à•”Œ‹‡‚µ‚½ƒe[ƒuƒ‹‚Ìî•ñ‚ğæ“¾‚·‚é
+			// SELECTï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½(MySQLï¿½Å“ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½eï¿½[ï¿½uï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½ï¿½æ“¾ï¿½ï¿½ï¿½ï¿½
 			String sql = "SELECT mutter.ID, NAME, TEXT, IMG FROM mutter INNER JOIN user ON mutter.USERID = user.id WHERE TEXT LIKE ? AND mutter.id NOT IN(select mutter from loves where user = ?) ORDER BY ID DESC;";
 			PreparedStatement pStmt = conn.prepareStatement(sql);
-			// SELECT•¶’†‚ÌuHv‚Ég—p‚·‚é’l‚ğİ’è‚µSQL‚ğŠ®¬
+			// SELECTï¿½ï¿½ï¿½ï¿½ï¿½Ìuï¿½Hï¿½vï¿½Égï¿½pï¿½ï¿½ï¿½ï¿½lï¿½ï¿½İ’è‚µSQLï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			pStmt.setString(1,  "%" + searchText + "%");
 			pStmt.setInt(2, userId);
-			// SELECT Às
+			// SELECT ï¿½ï¿½ï¿½s
 			ResultSet rs = pStmt.executeQuery();
-			// SELECT•¶‚ÌŒ‹‰Ê‚ğArrayList‚ÉŠi”[
+			// SELECTï¿½ï¿½ï¿½ÌŒï¿½ï¿½Ê‚ï¿½ArrayListï¿½ÉŠiï¿½[
 			while(rs.next()) {
 				int id = rs.getInt("mutter.ID");
 				String userName = rs.getString("NAME");
@@ -196,6 +188,4 @@ public class MutterDAO implements DBDriver {
 		}
 		return mutterList;
 	}
-
-
 }

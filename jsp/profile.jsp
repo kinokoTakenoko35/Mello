@@ -37,8 +37,6 @@
 			});
 		});
 	</script>
-
-
 </head>
 
 <body>
@@ -131,8 +129,6 @@
 					</aside>
 					<div style="clear:both;"></div>
 			</section>
-
-
 		</div>
 
 	<footer>

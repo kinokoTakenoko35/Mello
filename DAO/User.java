@@ -45,7 +45,7 @@ public class User implements Serializable {
 			this.setPass(pass);
 		} catch (Exception e) {
 			// error msgを+でつないでいる
-				this.msg  += User.ERROR[1];
+			this.msg  += User.ERROR[1];
 		}
 	}
 	// ログイン時のメソッド
@@ -60,7 +60,6 @@ public class User implements Serializable {
 		}
 		this.id = id;
 	}
-
 	public void setId(String id) {
 		// リクエストにそもそもname属性が指定されていない場合
 		if(id == null) {
@@ -107,5 +106,4 @@ public class User implements Serializable {
 	public void setMsg(String msg) {this.msg = msg;}
 	public String getImg() {return img;}
 	public void setImg(String img) {this.img = img;}
-
 }

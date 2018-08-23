@@ -52,5 +52,4 @@ public class Loves implements Serializable {
 	public void setUserId(int userId) {this.userId = userId;}
 	public int getMutterId() {return mutterId;}
 	public void setMutterId(int mutterId) {this.mutterId = mutterId;}
-
 }

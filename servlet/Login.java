@@ -38,7 +38,6 @@ public class Login extends HttpServlet {
 
 		LoginLogic LoginLogic = new LoginLogic();
 		user = LoginLogic.execute(user.getId(), user.getPass());
-		//} else {
 			// ログイン成功時の処理
 			if(user != null && user.getMsg().equals("")) {
 				HttpSession session = request.getSession();

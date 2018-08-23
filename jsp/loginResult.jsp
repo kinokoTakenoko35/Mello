@@ -34,10 +34,9 @@
 							<a href="/Mello/jsp">TOP</a>
 						</c:otherwise>
 					</c:choose>
-
-					</div>
-				</div>
-			</div>
+                </div>
+            </div>
+        </div>
 			<div id="sidebar">
 			</div>
 			<div id="footer">footer</div>

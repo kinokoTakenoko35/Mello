@@ -37,10 +37,7 @@
 			});
 		});
 	</script>
-
-
 </head>
-
 <body>
 	<header>
 			<div id="header">
@@ -131,10 +128,7 @@
 					</aside>
 					<div style="clear:both;"></div>
 			</section>
-
-
 		</div>
-
 	<footer>
 		<div class="container">
 			©......

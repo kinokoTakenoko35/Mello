@@ -6,5 +6,4 @@ public interface DBDriver {
 	final String JDBC_URL = "jdbc:mysql://localhost/mello?useUnicode=true&characterEncoding=utf8";
 	final String DB_USER = "root";
 	final String DB_PASS = "";
-
 }
