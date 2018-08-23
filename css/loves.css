@@ -1,318 +1,356 @@
 @charset "UTF-8";
 
-html,body{margin:0;padding:0;}
+html, body {
+    margin: 0;
+    padding: 0;
+}
 
 body {
-	margin: 0px;
-	font-family: "ten-mincho", "Kokoro", serif;
+    margin: 0px;
+    font-family: "ten-mincho", "Kokoro", serif;
     font-feature-settings: "ss02";
     background-color: #0f4679;
-	overflow:scroll;
-	color: #fff;
+    overflow: scroll;
+    color: #fff;
 }
 
 header {
-	box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-	top: 0;
-	position: flxed; /*ヘッダー位置固定*/
-	padding: 0 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    top: 0;
+    position: flxed; /*ヘッダー位置固定*/
+    padding: 0 16px;
 }
 
 nav {
-	height: 400px;
-	margin-top: 50px;
-	margin-left: 150px;
-	text-decoration: 0;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 150px;
+    text-decoration: 0;
 }
 
 nav ul {
-	margin: 0;
-	padding: 0;
-	list-style:none;
-	font-family: 'Lato', sans-serif;
-	font-weight: bold;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
 }
 
 nav il {
-	display: block;
-	padding: 16px 8px;
-	text-decoration: 0;
+    display: block;
+    padding: 16px 8px;
+    text-decoration: 0;
 
 }
 
 nav il:first-of-type a {
-	padding-left: 0;
+    padding-left: 0;
 }
 
 a {
-	color: #ddd;
-	text-decoration: none;
+    color: #ddd;
+    text-decoration: none;
 }
 
 .bg-slider_menu {
-	width: 100vw;
-	height: 15vh;
-	top 0px;
-	display: flex;
-	background-position:center center;
-	background-size: cover;
-	color: #dddddd;
-	position:relative;
+    width: 100vw;
+    height: 15vh;
+    top 0px;
+    display: flex;
+    background-position: center center;
+    background-size: cover;
+    color: #dddddd;
+    position: relative;
 }
+
 .title {
-	position: relative;
-	vertical-align: top;
-	color: #dddddd;
-	padding:2px 0 4px 15px;
-	margin:5px 0 15px 0;
-	width:50%;
+    position: relative;
+    vertical-align: top;
+    color: #dddddd;
+    padding: 2px 0 4px 15px;
+    margin: 5px 0 15px 0;
+    width: 50%;
 }
 
 .menu {
-	position: relative;
-	width:40%;
-	float: right;
-	margin-top: 60px;
+    position: relative;
+    width: 40%;
+    float: right;
+    margin-top: 60px;
     margin-left: 700px;
 }
 
 .menu_clear {
-	clear:both;
+    clear: both;
 }
+
 .clear {
-	clear:both;
+    clear: both;
 }
 
 section.maincol {
-	width: 100%;
-	margin-right: -900px;
+    width: 100%;
+    margin-right: -900px;
 }
 
 .main-container {
-	margin-right: 900px;
+    margin-right: 900px;
 }
 
 aside.search-view {
-	width:70%;
-	margin-left: 50px;
+    width: 70%;
+    margin-left: 50px;
 }
 
 main .container {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 /* ボタン設定 */
-input::-webkit-input-placeholder{
-    color: rgba(0,0,0,0.38);
+input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.38);
 }
 
 .search-view [name="text"] {
-	margin-left: -130px;
-	width: 200px;
+    margin-left: -130px;
+    width: 200px;
     border: none;
     border-radius: 2px;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
     height: 44px;
     text-align: center;
     background-color: #e3e3e3000;
 }
 
 .search-view [type="submit"] {
-	-webkit-appearance: none;
+    -webkit-appearance: none;
     border: none;
     border-radius: 2px;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
     height: 44px;
-	margin-top : 0px;
+    margin-top: 0px;
 
-	text-align: center;
-	color: #fff;
+    text-align: center;
+    color: #fff;
 }
 
 .favariteForm {
-	width: 90%;
-	margin-left: 50px;
-	clear: both;
-	overflow-x:hidden;overflow-y:hidden;
-	overflow: auto;
-	padding-left: 40px;
+    width: 90%;
+    margin-left: 50px;
+    clear: both;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    overflow: auto;
+    padding-left: 40px;
     height: 230px;
-	background-color: #0f4679;
-	border-radius: 4px;
-	border-color: #fff;
-	border-sizw: 1px;
+    background-color: #0f4679;
+    border-radius: 4px;
+    border-color: #fff;
+    border-sizw: 1px;
     padding-left: 40px;
     margin-top: 10px;
-	padding-bottom: 10px;
-    box-shadow: 0 10px 50px rgba(0,0,0,0.3);
+    padding-bottom: 10px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
 }
+
 .favariteForm::-webkit-scrollbar {
-	display: none;
+    display: none;
 }
 
 .favariteResult {
-	width: 90%;
-	margin-left: 50px;
-	clear: both;
-	overflow-x:hidden;overflow-y:hidden;
-	overflow: scroll;
-	background-color: #85a0ab;
-	border-radius: 4px;
-	border-color: #fff;
-	border-sizw: 1px;
+    width: 90%;
+    margin-left: 50px;
+    clear: both;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    overflow: scroll;
+    background-color: #85a0ab;
+    border-radius: 4px;
+    border-color: #fff;
+    border-sizw: 1px;
     padding-left: 40px;
     margin-top: 10px;
-	padding-bottom: 10px;
-    box-shadow: 0 10px 50px rgba(0,0,0,0.3);
+    padding-bottom: 10px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
     height: 230px;
 }
 
 .favariteResult::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .FavList {
-	float:left;
-	height: 50px;
-	margin-top: 10px;
-	width: 100%;
+    float: left;
+    height: 50px;
+    margin-top: 10px;
+    width: 100%;
 }
 
 .img {
-	float: left;
-	width: 6%;
-	vertical-align: top;
+    float: left;
+    width: 6%;
+    vertical-align: top;
 }
+
 .text_css {
-	font-size: 15px;
-	float: left;
-	width: 85%;
+    font-size: 15px;
+    float: left;
+    width: 85%;
 }
 
 .tete {
-	float: left;
-	width: 5%;
+    float: left;
+    width: 5%;
 }
 
 .button {
-	background-color: transparent;
+    background-color: transparent;
     border: none;
     cursor: pointer;
     outline: none;
     padding: 0;
     appearance: none;
-	float:left;
-	vertical-align: -6px;
+    float: left;
+    vertical-align: -6px;
 }
 
 fa-button {
-	clear: both;
+    clear: both;
 }
 
 /*button settingお気に入り追加*/
-$bubble-d: 4.5rem; // bubble diameter
-$bubble-r: .5*$bubble-d; // bubble-radius
+$
+bubble-d:
+
+4.5
+rem
+
+;
+/
+/
+bubble diameter
+$ bubble-r:
+
+.5
+*$ bubble-d
+
+;
+/
+/
+bubble-radius
 
 @mixin bubble($ext) {
     transform: scale(1);
     border-color: #cc8ef5;
-    border-width: $ext;
+    border-width: $ ext;
 }
 
 [class='toggle-heart'] {
-	position: absolute;
-	left: -100vw;
+    position: absolute;
+    left: -100vw;
 }
 
 [class='toggle-heart']:checked + label {
-	color: #e2264d;
-	will-change: font-size;
-	animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+    color: #e2264d;
+    will-change: font-size;
+    animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
 }
+
 [class='toggle-heart']:before :after {
-	animation: inherit;
-	animation-timing-function: cubic-bezier(.21, .61, .35, 1);
-        }
+    animation: inherit;
+    animation-timing-function: cubic-bezier(.21, .61, .35, 1);
+}
 
 [class='toggle-heart']:before {
-	will-change: transform, border-width, border-color;
-	animation-name: bubble;
+    will-change: transform, border-width, border-color;
+    animation-name: bubble;
 }
 
 [class='toggle-heart-label'] {
-	align-self: center;
-	position: relative;
-	color: #aab8c2;
-	font-size: 2em;
-	cursor: pointer;
+    align-self: center;
+    position: relative;
+    color: #aab8c2;
+    font-size: 2em;
+    cursor: pointer;
 }
 
 [class='toggle-heart-label']:before :after {
-	position: absolute;
-	z-index: -1;
-	top: 50%; left: 50%;
-	border-radius: 50%;
-	content: '';
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    content: '';
 }
 
 [for='toggle-heart']:before {
-	box-sizing: border-box;
-	margin: -$bubble-r;
-	border: solid $bubble-r #e2264d;
-	width: $bubble-d; height: $bubble-d;
-	transform: scale(0);
+    box-sizing: border-box;
+    margin: -$ bubble-r;
+    border: solid $ bubble-r #e2264d;
+    width: $ bubble-d;
+    height: $ bubble-d;
+    transform: scale(0);
 }
 
 /*button settingお気に入り解除*/
 [class='toggle-heart_del'] {
-	position: absolute;
-	left: -100vw;
+    position: absolute;
+    left: -100vw;
 }
 
 [class='toggle-heart_del']:checked + label {
-	color: #aab8c2;
-	will-change: font-size;
-	animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+    color: #aab8c2;
+    will-change: font-size;
+    animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
 }
+
 [class='toggle-heart_del']:before :after {
-	animation: inherit;
-	animation-timing-function: cubic-bezier(.21, .61, .35, 1);
-        }
+    animation: inherit;
+    animation-timing-function: cubic-bezier(.21, .61, .35, 1);
+}
 
 [class='toggle-heart_del']:before {
-	will-change: transform, border-width, border-color;
-	animation-name: bubble;
+    will-change: transform, border-width, border-color;
+    animation-name: bubble;
 }
 
 [class='toggle-heart-label_del'] {
-	align-self: center;
-	position: relative;
-	color: #e2264d;
-	font-size: 2em;
-	cursor: pointer;
+    align-self: center;
+    position: relative;
+    color: #e2264d;
+    font-size: 2em;
+    cursor: pointer;
 }
 
 [class='toggle-heart_del']:before :after {
-	position: absolute;
-	z-index: -1;
-	top: 50%; left: 50%;
-	border-radius: 50%;
-	content: '';
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    content: '';
 }
 
 [for='toggle-heart_del']:before {
-	box-sizing: border-box;
-	margin: -$bubble-r;
-	border: solid $bubble-r #e2264d;
-	width: $bubble-d; height: $bubble-d;
-	transform: scale(0);
+    box-sizing: border-box;
+    margin: -$ bubble-r;
+    border: solid $ bubble-r #e2264d;
+    width: $ bubble-d;
+    height: $ bubble-d;
+    transform: scale(0);
 }
 
 @keyframes heart {
-	0%, 17.5% { font-size: 0; }
+    0%, 17.5% {
+        font-size: 0;
+    }
 }
 
 @keyframes bubble {
-	15% { @include bubble($bubble-r); }
-	30%, 100% { @include bubble(0); }
+    15% {
+    @include bubble($ bubble-r);
+    }
+    30%, 100% {
+    @include bubble(0);
+    }
 }

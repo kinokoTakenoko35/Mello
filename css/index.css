@@ -1,67 +1,71 @@
 @charset "UTF-8";
 
-html,body{margin:0;padding:0;}
+html, body {
+    margin: 0;
+    padding: 0;
+}
 
 body {
-	margin: 0px;
-	font-family: "ten-mincho", "Kokoro", serif;
+    margin: 0px;
+    font-family: "ten-mincho", "Kokoro", serif;
     font-feature-settings: "ss02";
 }
 
 .bg-slider {
-	width: 100vw;
-	height: 100vh;
-	top 0px;
-	display: flex;
-	background-position:center center;
-	background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    top 0px;
+    display: flex;
+    background-position: center center;
+    background-size: cover;
 }
 
 #root {
-	width:100%;
+    width: 100%;
 }
+
 #header {
-	padding:-5px 0px 0px;
-	margin:0px 0 0px 0;
+    padding: -5px 0px 0px;
+    margin: 0px 0 0px 0;
 }
 
 .title {
-	position: relative;
-	color: #dddddd;
-	padding:2px 0 4px 15px;
-	margin:5px 0 15px 0;
+    position: relative;
+    color: #dddddd;
+    padding: 2px 0 4px 15px;
+    margin: 5px 0 15px 0;
 }
 
 label [type="text"] {
-	width: 200px;
-	height: 3.75rem;
-	margin-top : 10px;
-	padding: 0 1.875rem;
-	color: #000;
-	background-color: #d8d8d8;
-	border: 1px solid #d8d8d8;
-	text-align: center;
+    width: 200px;
+    height: 3.75rem;
+    margin-top: 10px;
+    padding: 0 1.875rem;
+    color: #000;
+    background-color: #d8d8d8;
+    border: 1px solid #d8d8d8;
+    text-align: center;
 }
 
 label [type="password"] {
-	width: 200px;
-	height: 3.75rem;
-	margin-top : 10px;
-	padding: 0 1.875rem;
-	color: #000;
-	background-color: #d8d8d8;
-	border: 1px solid #d8d8d8;
-	text-align: center;
+    width: 200px;
+    height: 3.75rem;
+    margin-top: 10px;
+    padding: 0 1.875rem;
+    color: #000;
+    background-color: #d8d8d8;
+    border: 1px solid #d8d8d8;
+    text-align: center;
 }
 
 label [type="submit"] {
-	-webkit-appearance: none;
-	width: 262px;
-	height: 3.75rem;
-	margin-top : 10px;
-	padding: 0 1.875rem;
-	text-align: center;
-	color: #fff;
+    -webkit-appearance: none;
+    width: 262px;
+    height: 3.75rem;
+    margin-top: 10px;
+    padding: 0 1.875rem;
+    text-align: center;
+    color: #fff;
     background-color: rgb(122, 201, 122);
     border-width: 1px;
     border-style: solid;
@@ -70,22 +74,22 @@ label [type="submit"] {
 }
 
 #content {
-	text-align: center;
+    text-align: center;
 }
 
 .text {
-	text-align: center;
+    text-align: center;
 }
 
 .signUpButton > a {
-	text-decoration: none;
-	-webkit-appearance: none;
-	width: 262px;
-	height: 3.75rem;
-	margin-top : 10px;
-	padding: 0 0.600rem;
-	text-align: center;
-	color: #fff;
+    text-decoration: none;
+    -webkit-appearance: none;
+    width: 262px;
+    height: 3.75rem;
+    margin-top: 10px;
+    padding: 0 0.600rem;
+    text-align: center;
+    color: #fff;
     background-color: rgb(122, 201, 122);
     border-width: 1px;
     border-style: solid;
@@ -95,5 +99,5 @@ label [type="submit"] {
 }
 
 .signUpButton {
-	margin-top : 30px;
+    margin-top: 30px;
 }

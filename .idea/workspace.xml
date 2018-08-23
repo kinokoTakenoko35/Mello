@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdc1fc48-4c41-49b2-8cde-d9b395b94c19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/AccountLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/AccountLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/DBDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/DBDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/LoginLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/LoginLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/Loves.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/Loves.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/Mutter.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/Mutter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/MutterDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/MutterDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/PostMutterLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/PostMutterLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsp/loginResult.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jsp/loginResult.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsp/loves.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jsp/loves.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsp/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jsp/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsp/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/jsp/profile.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet/Logout.java" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/Logout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet/LovesServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/LovesServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/Profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet/UserCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/UserCreate.java" afterDir="false" />
-    </list>
+    <list default="true" id="bdc1fc48-4c41-49b2-8cde-d9b395b94c19" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,14 +45,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="13" />
+          <entry key="css" value="14" />
           <entry key="java" value="31" />
           <entry key="jsp" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="13" />
+          <entry key="CSS" value="14" />
           <entry key="JAVA" value="31" />
           <entry key="JSP" value="13" />
         </counts>
@@ -98,24 +76,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jsp/main.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jsp/profile.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
-              <caret line="130" column="22" selection-start-line="130" selection-start-column="22" selection-end-line="130" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jsp/signUp.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="555">
@@ -124,65 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servlet/FollowingServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servlet/Login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servlet/Logout.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servlet/LovesServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="77" selection-start-line="77" selection-end-line="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servlet/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="724">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/servlet/Profile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="86" selection-start-line="86" selection-end-line="86" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/servlet/UserCreate.java">
+        <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+            <state relative-caret-position="150">
+              <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -307,7 +213,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535035924943" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535037193756" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -345,12 +251,12 @@
       <option name="presentableId" value="Default" />
       <updated>1534492541925</updated>
       <workItem from="1534492543133" duration="950000" />
-      <workItem from="1535032024462" duration="2820000" />
+      <workItem from="1535032024462" duration="3266000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3770000" />
+    <option name="totallyTimeSpent" value="4216000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="27" y="27" width="1172" height="1023" extended-state="0" />
@@ -423,13 +329,6 @@
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="83" column="20" lean-forward="true" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -615,13 +514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jsp/signUp.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/servlet/FollowingServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -650,13 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servlet/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="724">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/servlet/Profile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
@@ -666,8 +551,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/servlet/UserCreate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+        <state relative-caret-position="435">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servlet/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="724">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsp/signUp.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
         </state>
       </provider>
     </entry>
