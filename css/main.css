@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+html,body{margin:0;padding:0;}
+
+body {
+	margin: 0px;
+	font-family: "ten-mincho", "Kokoro", serif;
+    font-feature-settings: "ss02";
+    background-color: #0f4679;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.footer-image {
+	font-size: 0;
+	line-height: 0;
+	disply: block;
+	max-width: 100%!important;
+	margin-bottom: 0px;
+	position:fixed;
+	width:100%;
+	bottom:0;
+	text-align:center;
+	overflow:hidden;
+	bottom:0;
+	vertical-align: bottom;
+	display:table-cell;
+	z-index: 1;
+}
+
+.live-image {
+	width: 100%;
+	margin-bottom: 0px;
+}
+
+a {
+	color: #dddddd;
+	text-decoration: none;
+}
+
+menu a {
+	color: #dddddd;
+	text-decoration: none;
+
+}
+
+#header {
+	box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+	display: block;
+	position:relative;
+}
+
+.bg-slider_menu {
+	width: 100vw;
+	height: 15vh;
+	top 0px;
+	display: flex;
+	background-position:center center;
+	background-size: cover;
+	color: #dddddd;
+	position:relative;
+}
+.title {
+	position: relative;
+	vertical-align: top;
+	color: #dddddd;
+	padding:2px 0 4px 15px;
+	margin:5px 0 15px 0;
+	width:50%;
+}
+
+.menu {
+	position: relative;
+	width:40%;
+	float: right;
+}
+
+.menu_clear {
+	clear:both;
+}
+.clear {
+	clear:both;
+}
+
+#root {
+	width:100%;
+}
+
+#main {
+	width:942px;
+	margin: 50px auto;
+	color: #dddddd;
+}
+
+#nav {
+	float: left;
+	width:200px;
+}
+
+#content {
+	float: left;
+	width:742px;
+	text-align: center;
+	font-family: 'Arvo', serif;
+	color: #5d5d5d;
+}
+
+nav#page-navigation ul.nav-items {
+	color: #dddddd;
+	font-weight: bold;
+	font-family: 'Lato', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0 0;
+    -webkit-padding-start: 0;
+    text-align: right;
+    border-top: 1px solid #dddddd;
+}
+
+label [type="text"] {
+	width: 300px;
+	height: 3.75rem;
+	margin-top : 10px;
+	padding: 0 1.875rem;
+	background-color: transparent;
+	border: 1px solid #d8d8d8;
+	text-align: center;
+}
+
+input::-webkit-input-placeholder{
+    color: #ececec;
+}
+
+label [name="text"] {
+	text-align: left;
+}
+
+label [type="submit"] {
+	-webkit-appearance: none;
+	border-radius: 0.3125rem;
+	width: 100px;
+	height: 3.75rem;
+	margin-top : 10px;
+	padding: 0 1.875rem;
+	text-align: center;
+	color: #fff;
+    background-color: rgb(122, 201, 122);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(122, 201, 122);
+    border-image: initial;
+}
+
+.megForm {
+	text-align: left;
+	margin-left : 125px;
+	color: #dddddd;
+	overflow: scroll;
+	height: 380px;
+	-ms-overflow-style: none;
+	width: 100%;
+}
+
+.megForm::-webkit-scrollbar {
+	display: none;
+}
+
+li {
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+}
+
+
+.ten-mincho {
+	font-family: "ten-mincho", "Kokoro", serif;
+    font-feature-settings: "ss02";
+}
+
+.innerProf {
+	margin-top: 0px;
+	text-align: center;
+	margin-left : 130px;
+	color: #dddddd;
+	overflow: scroll;
+	height: 400px;
+	-ms-overflow-style: none;
+	z-index: 10;
+	overflow-x:hidden;overflow-y:hidden;
+	position: relative;
+}
+
+
+
+.innerProf h1 {
+	margin-top: -8px;
+	font-size: 20pt;
+	text-align: center;
+}
+
+.container {
+	z-index: 30;
+}
+
+.img {
+	float: left;
+	width: 8%;
+	vertical-align: top;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #b9a0a047;
+}
+.text_css {
+	font-size: 15px;
+	float: left;
+	width: 90%;
+	padding-top: 10px;
+	border-top: 1px solid #b9a0a047;
+}
